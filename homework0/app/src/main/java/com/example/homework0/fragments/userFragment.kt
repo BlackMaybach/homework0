@@ -1,7 +1,6 @@
 package com.example.homework0.fragments
 
 import android.os.Bundle
-import android.provider.SyncStateContract
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -18,7 +17,7 @@ class userFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val viewFirstFragment = inflater.inflate(R.layout.fragment_user, container, false)
+        val viewFirstFragment = inflater.inflate(R.layout.fragment_adapter_listuser, container, false)
         val recyclerView = viewFirstFragment.findViewById<RecyclerView>(R.id.recyclerUser)
 
         // adapter - работает с массивом что бы его отрисовать,
